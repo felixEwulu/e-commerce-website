@@ -169,6 +169,22 @@ img {
 
 .nav__menu{
     position: relative  ;
+    transition: .4s;
+}
+
+.nav__item a:hover,
+.nav__item a.active-link{
+    color: var(--title-color-alt);
+}
+
+.nav__item a.active-link::after{
+    content: "";
+    width: 8%;
+    height: 2px;
+    background: var(--title-color-alt);
+    position: absolute;
+    bottom: -4px;
+    left: 2px;
 }
 
 @media screen and (max-width: 767px){
